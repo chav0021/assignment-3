@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport {width: device-width; scale: 1;}
+@-ms-viewport {width: device-width; scale: 1;}
+@-webkit-viewport {width: device-width; scale: 1;}
+@-o-viewport {width: device-width; scale: 1;}
+@viewport {width: device-width; scale: 1;}
+
+html {
+	-moz-text-size-adjust: 100%;	
+	-ms-text-size-adjust: 100%;	
+	-webkit-text-size-adjust: 100%;	
+	-o-text-size-adjust: 100%;	
+	text-size-adjust: 100%;	
+}
+
+/*CSS Starts*/
+
+html, body {
+	font-family:sans-serif;
+	width: 100%;
+}
+
+main {
+	margin: 10.5rem auto 0;
+	width: 90%;
+	padding-bottom:2.5rem;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+header {
+	position:fixed;
+	top: 0;
+	width:100%;
+	z-index: 1000;
+	background-color:#FFF;
+}
+
+.logo {
+	background-image:url(../images/logo.svg);
+	background-size: 13rem;
+	height: 6rem;
+	background-repeat:no-repeat;
+	background-position: center;
+}
+
+nav {
+	margin: 0 auto;
+	text-align: center;
+	background:#CCC;
+	height: 2rem;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 3px 1%;
+	height:2rem;
+	width: 20%;
+}
+
+nav ul li a {
+	text-decoration: none;
+	text-transform:uppercase;
+	color: #000;
+	font-size: 0.75rem;
+	height: 2rem;
+}
+
+nav ul li:hover {
+	background-color:#888;
+	-webkit-transition: background 0.1s ease-in-out;
+    -moz-transition: background 0.1s ease-in-out;
+    transition: background 0.1s ease-in-out;
+}
+
+nav ul li {
+	text-decoration: none;
+	color: #fff;
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.25rem;
+}
+
+.pricesnav a{
+	font-size:0.9rem;
+	padding: 3px 0;
+}
+
+.home {
+	content: url(../images/home2.svg);
+	height: 1.5rem;
+}
+
+.schedule {
+	content: url(../images/calendar.svg);
+	height: 1.5rem;
+}
+
+.prices {
+	content: url(../images/money.svg);
+	height: 1.5rem;
+}
+
+.contact {
+	content: url(../images/contact.svg);
+	height: 1.5rem;
+}
+
+/* Slider */
+
+#schedule-section {
+	height: 51rem;
+}
+
+#prices-section {
+	height: 20rem;
+}
+
+#cbp-contentslider {
+	height: 51rem;
+}
+
+.cbp-contentslider {
+	width: 100%;
+	height: 100%;
+	margin: 8rem auto;
+	position: relative;
+}
+
+.cbp-contentslider ul {
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	top: 3rem;
+}
+
+.cbp-contentslider ul li {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 1em;
+	background: #fff;
+}
+
+.cbp-contentslider > ul li:target {
+	z-index: 100;
+}
+
+.cbp-contentslider nav {
+	width: 100%;
+	left: 0;
+	right: 0;
+	height: 3em;
+	z-index: 1000;
+	background-color: #EEE;
+	position: fixed;
+}
+
+.cbp-contentslider nav a {
+	float: left;
+	display: inline-block;
+	text-decoration:none;
+	width: 20%;
+	height: 100%;
+	font-weight: 400;
+	color: #000;
+	text-align: center;
+	line-height: 3;
+	text-transform: uppercase;
+	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.cbp-contentslider nav a:hover {
+	background-color: #666;
+	color: #fff;
+}
+
+.cbp-contentslider nav a.rc-active {
+	background-color: #ccc;
+	color: #fff;
+}
+
+table {
+	width: 90%;
+	font-size:0.85rem;
+}
+
+table tr {
+	height: 2.5rem;
+}
+
+table td {
+	border-top:solid 2px #303030;
+	padding:3% 0;
+}
+
+table th, td {
+	width: 35%;
+}
+
+table th {
+	text-align:left;
+	text-transform:uppercase;
+	font-weight: bold;
+	padding: 7% 0;
+}
+
+
+/* Footer */
+
+footer {
+	height: 20rem;
+}
+
+#contact {
+	width: 100%;
+	background-color:#888;
+	text-align:center;
+	height: 20rem;
+	bottom:0;
+}
+
+.social ul {
+	list-style-type:none;
+}
+
+.social ul li {
+	display: inline-block;
+	padding: 3px 1%;
+	height:2rem;
+	width: 20%;
+}
+
+.social ul li img{
+	height:2rem;
+}
